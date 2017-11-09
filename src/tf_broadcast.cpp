@@ -14,7 +14,7 @@ int main(int argc, char** argv){
     base_zed_broadcaster.sendTransform(
       tf::StampedTransform(
         tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(-1.0, 0.0, 1.5)),
-        ros::Time::now(),"base_link", "zed_initial_frame"));
+        ros::Time::now(),"base_link", "zed_center"));
     base_sensors_broadcaster.sendTransform(
       tf::StampedTransform(
         tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(-2.5, 0.0, 1.8)),
